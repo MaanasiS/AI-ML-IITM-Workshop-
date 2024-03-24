@@ -1,0 +1,140 @@
+Anaconda commands:
+
+conda --version
+python --version
+conda update --all
+jupyter notebook
+
+
+Python commands:
+
+print(dir(__builtins__))  ----> Prints all the inbuilt python functions
+
+
+shift + tab ----> shortcut for getting documentation for any function
+
+
+or help(function_name) ----> it will also execute
+
+print returns nothing
+
+print(print(print("Hello"))) ---> Returns Hello None None (cuz Python moves from left to right) ----> Prints first priority to function
+
+string + or - will give error
+but, we can type cast it using int("")+x
+
+
+AI ML:
+
+1. Get the Data or make a Data
+2. Analyze the Data
+3. Cleaning of Data
+4. Train the Data
+5. Test the Data
+6. Deploy the Data
+
+
+csv stands for Comma Seperated Values
+tsv stands for Task Seperated Values
+
+
+1. Get the Data from the following sources:
+
+a. mockaroo
+b. kaggle
+c. uci
+d. amazon
+e. Bing
+
+
+AI ML Commands:
+
+1. data = pandas.(type tab, then we'll get a list of keywords, then type re, we'll get read_csv as second option) ---> data=pandas.read_csv("1. Right click file in the folder, 2. Choose copy as path, 3. change backward slash to forward slash if error is shown), Then execute
+
+
+2. Then type data and execute to get the data
+
+3. data.gender gives all the genders in the data
+
+4. data.gender.value_counts() gives how many people are present in each gender
+
+5. create or define a dictionary called friend
+
+6. a=pandas.DataFrame(friend) ----> stores the dictionary so that it can be executed
+
+7. a['CGPA']=[9.8,987] adds a new column to the existing dictionary
+
+8. a.to_csv("File_name.csv") to download the above created dictionary or data as a file
+
+     In this case, File name = maanasi it can be found in -----> "C:\Users\email\Maanasi.csv"
+
+9. Go to GOOGLE And type #whatever you like eg:food,chocolate,etc. csv github
+    eg: food csv github
+
+10. Click on 1st link 
+    click raw
+    copy the raw url link eg: https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/pastry.csv
+
+11. b=pandas.read_csv("https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/pastry.csv")
+    Here, we are declaring a new variable b and storing a different dataset 
+    Here, we get the data through a URL link/website
+
+
+
+
+12.define x and y as lists each holding multiple values
+
+13. import matplotlib.pyplot as pt 
+             matplotlib.pyplot is a data visua;ization library
+
+14. pt.plot(x,y) ---> plots a graph for the variables x and y
+
+15. pt.show() ---> makes the graph visible
+
+16.  pt.scatter(x,y) ---> pinpoints the x and y coordinates
+      Has the following useful attributes:
+
+          i) c= color ----> eg: pt.plot(x,y,c="red") ----> color of graph
+                            eg: pt.scatter(x,y,c="black") ----> color of the pinpointer
+
+          ii) s= size of the pinpointer ---> eg: pt.scatter(x,y,s=300)
+
+         iii) marker = shape of the pinpointer ----> eg: pt.scatter(x,y,marker="*") star shape ; p=pentagon ; h=haxagon ; shift 6 = triangle
+
+
+
+
+IMAGE PROCESSING:
+
+1. we are using COMPUTER VISION Technique
+
+2. import cv2 ---> if it shows error saying module not found then install it in Jupyter Notebook itself using [pip install opencv-python] --> command --> or [!pip install opencv-python]
+
+3. type import cv2 again and execute
+
+4. go to web and save an image as jpeg in desktop (eg: zoro.jpeg)
+
+5. sh=cv2.imread("C:\Users\email\OneDrive\Desktop\shanks.jpg") --->stores image in a variable
+
+6. sh.shape ----> tells how many rows and columns the image is made of (4000, 2661, 3) and 3 => colorful image ; 0 => black and white ; 
+
+7.pt.imshow(sh) ---> converts the image/pixels into numerical values
+
+8. #Only these 3 lines make my windows show the img
+    cv2.imshow("maanasi friend",temp)
+    cv2.waitKey(0)  # => no waiting time
+    cv2.destroyAllWindows() 
+
+9. demo=temp[2000:3800,1600:2400]   #first : means rows and the 2nd one means columns i.e. basically before and sfter the first : the values should be less than 4k and before and             	after the 2nd : the value should be less than 2661
+
+
+
+     
+
+
+
+
+
+
+
+
